@@ -10,7 +10,7 @@ Generator for DNA code
 import numpy as np
 
 alphabet = ['C', 'G', 'A', 'T']
-N = 10000
+N = 1000
 data = ''
 for i in range(0, N):
     index = np.random.choice(len(alphabet))
