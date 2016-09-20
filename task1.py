@@ -7,6 +7,8 @@ Created on Mon Sep 19 21:12:31 2016
 Task 1 - compare Knuth–Morris–Pratt and bruteforce algorithms
 """
 
+import numpy as np
+
 #needle - искомая подстрока, halystack - текст
 def bruteforce(needle, haystack):
     n = len(haystack)
@@ -39,9 +41,9 @@ def KMP(needle, haystack):
         while k > 0 and needle[k] != needle[i]:
             k = D[k-1]
             N_trans += 1
+        N_trans += 1
         if needle[k] == needle[i]:
             k += 1
-            N_trans += 1
         D[i] = k
     
     #D - массив сдвигов
@@ -54,17 +56,19 @@ def KMP(needle, haystack):
         N += 1
         if needle[k] == haystack[i]:
             k += 1
-        N += 1
         if k == m:
             pos = i - m + 1
             break
     return (pos, N_trans, N)
     
-    
+#сектор сбора статистики
 text = open('dna.txt', 'r')
 haystack = text.read()
 text.close()
-needle = 'ATTTTGACAGGTCGCGATGCAAACTATAGACAACAGGGTATGGTGTTGTGAACGATTGGCTCGTGGTGATTCGCGGGCAATCGTCGCTAAGCGTTTAAAGATCCGAGTGCGTCGTCCTAGATTTACAGTCTTCGACACTATACCAGCCTAACATGAGAGACGTCCCTACCTTGGCAAAGGGGAATGTCGCATCCGCTCAACTAGAGAAGCTTCCCATGTTCATGCGAACACGGGTTAGAACCGTCTCTTGACTTCGAATTGCGGCCAAAATGCCTTGCGGACGTCGACACCCCTTTTCGGACGGCCCGACCGAAAGTTGCCGCCGGGTTCTCCCTGGTTGGTATGGGAGGGAACCTGTCGCGCCCCTAGGCAGACTACTTCGAAGTCGTTAGAAACGCCGTTGGTCTCGATTGGTGAGCGAGTCCAACTCCCTAAGAGCCTAAGATACTTCCCCGAAATGCCTTAGCACATATCTTGGGAGCATGTATTTCCTGTCGTCGCGCCGCATAAAACTCCTAGTTGTGAGTTGGTATGTGCGAGCCGATTGTTTTTTCTTCGTCCGTGGATAGTTCGTTCAACGCGATACTCATCACCGACCCGTGGGCCAGACGAATCATCGAAAATAGAACAATAGGTTTAGATACTGCAGTCGGGGCTGTAGTCGGATGCGGCACCACGCGGTCCTCATCAAGCTTAGATTCGAGGGGTCGAACCATCTAGGAATGTTAACATCTGTGACTGATTCCAGGACGCCAC'
+
+needle_len = 50
+random_start = np.random.choice(len(haystack) - needle_len)
+needle = haystack[random_start:random_start+needle_len]
 
 (pos_brute, N_brute) = bruteforce(needle, haystack)
 (pos_KMP, N_trans, N_KMP) = KMP(needle, haystack)
