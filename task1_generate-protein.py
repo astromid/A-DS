@@ -12,7 +12,7 @@ import numpy as np
 alphabet = ['C', 'G', 'A', 'T']
 N = 100000
 data = ''
-for i in range(0, N):
+for i in range(N):
     index = np.random.choice(len(alphabet))
     data += alphabet[index]
 

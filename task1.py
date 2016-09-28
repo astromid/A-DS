@@ -32,7 +32,6 @@ def KMP(needle, haystack):
     #первый шаг - трансляция
     n = len(haystack)
     m = len(needle)
-    N_trans = 0
     N = 0
     
     D = [0 for i in range(m)]
@@ -40,8 +39,8 @@ def KMP(needle, haystack):
         k = D[i-1]
         while k > 0 and needle[k] != needle[i]:
             k = D[k-1]
-            N_trans += 1
-        N_trans += 1
+            N += 1
+        N += 1
         if needle[k] == needle[i]:
             k += 1
         D[i] = k
@@ -59,18 +58,32 @@ def KMP(needle, haystack):
         if k == m:
             pos = i - m + 1
             break
-    return (pos, N_trans, N)
+    return (pos, N)
     
 #сектор сбора статистики
 text = open('dna.txt', 'r')
 haystack = text.read()
 text.close()
 
-needle_len = 50
-random_start = np.random.choice(len(haystack) - needle_len)
-needle = haystack[random_start:random_start+needle_len]
+#т.к. строчка случайная, необходимо повторить N раз
+N_brute_all = 0
+N_KMP_all = 0
+for step in range(100):
+    
+    #генерируем строку, которой нет в тексте
+    alphabet_no = ['A', 'B', 'C', 'D']
+    needle_len = 50
+    needle= ''
+    for i in range(needle_len):
+        index = np.random.choice(len(alphabet_no))
+        needle += alphabet_no[index]
 
-(pos_brute, N_brute) = bruteforce(needle, haystack)
-(pos_KMP, N_trans, N_KMP) = KMP(needle, haystack)
+    (pos_brute, N_brute) = bruteforce(needle, haystack)
+    (pos_KMP, N_KMP) = KMP(needle, haystack)
+    N_brute_all += N_brute
+    N_KMP_all += N_KMP
+
+N_brute_all = N_brute_all / 100
+N_KMP_all = N_KMP_all / 100
 print('Len(needle)= ' + str(len(needle)) + ' Len(haystack)= ' + str(len(haystack)) + \
-' N_brute=' + str(N_brute) + ' N_trans= ' + str(N_trans) + ' N_KMP=' + str(N_KMP))
+' N_brute_avg=' + str(N_brute_all) + ' N_KMP_avg=' + str(N_KMP_all))
