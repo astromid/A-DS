@@ -1,0 +1,169 @@
+Ratio = -0.68, paste: cmp 494216, swap 493217; shaker: cmp 499500, swap 986434
+
+Ratio = -0.66, paste: cmp 492945, swap 491946; shaker: cmp 499500, swap 983892
+
+Ratio = -0.64, paste: cmp 491501, swap 490502; shaker: cmp 499500, swap 981004
+
+Ratio = -0.62, paste: cmp 489873, swap 488874; shaker: cmp 499500, swap 977748
+
+Ratio = -0.6, paste: cmp 488102, swap 487103; shaker: cmp 499500, swap 974206
+
+Ratio = -0.58, paste: cmp 486113, swap 485114; shaker: cmp 499500, swap 970228
+
+Ratio = -0.56, paste: cmp 483785, swap 482786; shaker: cmp 499500, swap 965572
+
+Ratio = -0.54, paste: cmp 481198, swap 480199; shaker: cmp 499500, swap 960398
+
+Ratio = -0.52, paste: cmp 478411, swap 477412; shaker: cmp 499500, swap 954824
+
+Ratio = -0.5, paste: cmp 475348, swap 474349; shaker: cmp 499500, swap 948698
+
+Ratio = -0.48, paste: cmp 471923, swap 470924; shaker: cmp 499500, swap 941848
+
+Ratio = -0.46, paste: cmp 468096, swap 467097; shaker: cmp 499500, swap 934194
+
+Ratio = -0.44, paste: cmp 463846, swap 462847; shaker: cmp 499500, swap 925694
+
+Ratio = -0.42, paste: cmp 459213, swap 458214; shaker: cmp 499500, swap 916428
+
+Ratio = -0.4, paste: cmp 454255, swap 453256; shaker: cmp 499500, swap 906512
+
+Ratio = -0.38, paste: cmp 448921, swap 447922; shaker: cmp 499500, swap 895844
+
+Ratio = -0.36, paste: cmp 443220, swap 442221; shaker: cmp 499500, swap 884442
+
+Ratio = -0.34, paste: cmp 437140, swap 436141; shaker: cmp 499500, swap 872282
+
+Ratio = -0.32, paste: cmp 430735, swap 429736; shaker: cmp 499500, swap 859472
+
+Ratio = -0.3, paste: cmp 423953, swap 422954; shaker: cmp 499500, swap 845908
+
+Ratio = -0.28, paste: cmp 416783, swap 415784; shaker: cmp 499500, swap 831568
+
+Ratio = -0.26, paste: cmp 409084, swap 408085; shaker: cmp 499500, swap 816170
+
+Ratio = -0.24, paste: cmp 400623, swap 399624; shaker: cmp 499500, swap 799248
+
+Ratio = -0.22, paste: cmp 391637, swap 390638; shaker: cmp 499500, swap 781276
+
+Ratio = -0.2, paste: cmp 382174, swap 381175; shaker: cmp 499500, swap 762350
+
+Ratio = -0.18, paste: cmp 372066, swap 371067; shaker: cmp 499500, swap 742134
+
+Ratio = -0.16, paste: cmp 361322, swap 360323; shaker: cmp 499500, swap 720646
+
+Ratio = -0.14, paste: cmp 349952, swap 348953; shaker: cmp 499500, swap 697906
+
+Ratio = -0.12, paste: cmp 337842, swap 336843; shaker: cmp 499500, swap 673686
+
+Ratio = -0.1, paste: cmp 324830, swap 323831; shaker: cmp 499500, swap 647662
+
+Ratio = -0.08, paste: cmp 310814, swap 309815; shaker: cmp 499500, swap 619630
+
+Ratio = -0.06, paste: cmp 296030, swap 295031; shaker: cmp 499500, swap 590062
+
+Ratio = -0.04, paste: cmp 280198, swap 279199; shaker: cmp 499500, swap 558398
+
+Ratio = -0.02, paste: cmp 263302, swap 262303; shaker: cmp 499500, swap 524606
+
+Ratio = 0.0, paste: cmp 244632, swap 243633; shaker: cmp 499500, swap 487266
+
+Ratio = 0.02, paste: cmp 225934, swap 224935; shaker: cmp 499500, swap 449870
+
+Ratio = 0.04, paste: cmp 208922, swap 207923; shaker: cmp 499500, swap 415846
+
+Ratio = 0.06, paste: cmp 193186, swap 192187; shaker: cmp 499500, swap 384374
+
+Ratio = 0.08, paste: cmp 178742, swap 177743; shaker: cmp 499500, swap 355486
+
+Ratio = 0.1, paste: cmp 165469, swap 164470; shaker: cmp 499500, swap 328940
+
+Ratio = 0.12, paste: cmp 153146, swap 152147; shaker: cmp 499500, swap 304294
+
+Ratio = 0.14, paste: cmp 141543, swap 140544; shaker: cmp 499500, swap 281088
+
+Ratio = 0.16, paste: cmp 130659, swap 129660; shaker: cmp 499500, swap 259320
+
+Ratio = 0.18, paste: cmp 120367, swap 119368; shaker: cmp 499500, swap 238736
+
+Ratio = 0.2, paste: cmp 110744, swap 109745; shaker: cmp 499500, swap 219490
+
+Ratio = 0.22, paste: cmp 101789, swap 100790; shaker: cmp 499500, swap 201580
+
+Ratio = 0.24, paste: cmp 93443, swap 92444; shaker: cmp 499500, swap 184888
+
+Ratio = 0.26, paste: cmp 85493, swap 84494; shaker: cmp 499500, swap 168988
+
+Ratio = 0.28, paste: cmp 77909, swap 76910; shaker: cmp 499500, swap 153820
+
+Ratio = 0.3, paste: cmp 70821, swap 69822; shaker: cmp 499500, swap 139644
+
+Ratio = 0.32, paste: cmp 64275, swap 63276; shaker: cmp 499500, swap 126552
+
+Ratio = 0.34, paste: cmp 58309, swap 57310; shaker: cmp 499500, swap 114620
+
+Ratio = 0.36, paste: cmp 52792, swap 51793; shaker: cmp 499500, swap 103586
+
+Ratio = 0.38, paste: cmp 47701, swap 46702; shaker: cmp 499500, swap 93404
+
+Ratio = 0.4, paste: cmp 43087, swap 42088; shaker: cmp 499500, swap 84176
+
+Ratio = 0.42, paste: cmp 38817, swap 37818; shaker: cmp 499500, swap 75636
+
+Ratio = 0.44, paste: cmp 34845, swap 33846; shaker: cmp 499500, swap 67692
+
+Ratio = 0.46, paste: cmp 31193, swap 30194; shaker: cmp 499500, swap 60388
+
+Ratio = 0.48, paste: cmp 27802, swap 26803; shaker: cmp 499500, swap 53606
+
+Ratio = 0.5, paste: cmp 24716, swap 23717; shaker: cmp 499500, swap 47434
+
+Ratio = 0.52, paste: cmp 21904, swap 20905; shaker: cmp 499500, swap 41810
+
+Ratio = 0.54, paste: cmp 19360, swap 18361; shaker: cmp 499500, swap 36722
+
+Ratio = 0.56, paste: cmp 17041, swap 16042; shaker: cmp 499500, swap 32084
+
+Ratio = 0.58, paste: cmp 14881, swap 13882; shaker: cmp 499500, swap 27764
+
+Ratio = 0.6, paste: cmp 12919, swap 11920; shaker: cmp 499500, swap 23840
+
+Ratio = 0.62, paste: cmp 11190, swap 10191; shaker: cmp 499500, swap 20382
+
+Ratio = 0.64, paste: cmp 9607, swap 8608; shaker: cmp 499500, swap 17216
+
+Ratio = 0.66, paste: cmp 8170, swap 7171; shaker: cmp 499500, swap 14342
+
+Ratio = 0.68, paste: cmp 6885, swap 5886; shaker: cmp 499500, swap 11772
+
+Ratio = 0.7, paste: cmp 5836, swap 4837; shaker: cmp 499500, swap 9674
+
+Ratio = 0.72, paste: cmp 4911, swap 3912; shaker: cmp 499500, swap 7824
+
+Ratio = 0.74, paste: cmp 4059, swap 3060; shaker: cmp 499500, swap 6120
+
+Ratio = 0.76, paste: cmp 3312, swap 2313; shaker: cmp 499500, swap 4626
+
+Ratio = 0.78, paste: cmp 2767, swap 1768; shaker: cmp 499500, swap 3536
+
+Ratio = 0.8, paste: cmp 2342, swap 1343; shaker: cmp 499500, swap 2686
+
+Ratio = 0.82, paste: cmp 1972, swap 973; shaker: cmp 499500, swap 1946
+
+Ratio = 0.84, paste: cmp 1667, swap 668; shaker: cmp 499500, swap 1336
+
+Ratio = 0.86, paste: cmp 1445, swap 446; shaker: cmp 499500, swap 892
+
+Ratio = 0.88, paste: cmp 1256, swap 257; shaker: cmp 499500, swap 514
+
+Ratio = 0.9, paste: cmp 1111, swap 112; shaker: cmp 499500, swap 224
+
+Ratio = 0.92, paste: cmp 1057, swap 58; shaker: cmp 499500, swap 116
+
+Ratio = 0.94, paste: cmp 1032, swap 33; shaker: cmp 499500, swap 66
+
+Ratio = 0.96, paste: cmp 1012, swap 13; shaker: cmp 499500, swap 26
+
+Ratio = 0.98, paste: cmp 999, swap 0; shaker: cmp 499500, swap 0
+
+Ratio = 1.0, paste: cmp 999, swap 0; shaker: cmp 499500, swap 0
