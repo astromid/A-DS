@@ -16,9 +16,9 @@ def generateRandomArr(n):
 
 def qsort(arr):
     if arr:
-        return qsort([x for x in arr if x < arr[0]]) + \
-            [x for x in arr if x == arr[0]] + \
-            qsort([x for x in arr if x > arr[0]])
+        return qsort([x for x in arr if x < arr[int(len(arr)/2)]]) + \
+            [x for x in arr if x == arr[int(len(arr)/2)]] + \
+            qsort([x for x in arr if x > arr[int(len(arr)/2)]])
     return []
 
 
