@@ -7,6 +7,8 @@ Created on Mon Oct 24 20:10:46 2016
 
 import numpy as np
 import time
+import sys
+sys.setrecursionlimit(5000)
 
 
 def generateRandomArr(n):
@@ -15,10 +17,11 @@ def generateRandomArr(n):
 
 
 def qsort(arr):
+    med = int(len(arr) / 2)
     if arr:
-        return qsort([x for x in arr if x < arr[int(len(arr)/2)]]) + \
-            [x for x in arr if x == arr[int(len(arr)/2)]] + \
-            qsort([x for x in arr if x > arr[int(len(arr)/2)]])
+        return qsort([x for x in arr if x < arr[med]]) + \
+            [x for x in arr if x == arr[med]] + \
+            qsort([x for x in arr if x > arr[med]])
     return []
 
 
@@ -41,20 +44,24 @@ def shellsort(arr):
     return arr
 
 
-'''
+# повтор 10 раз для большей точности
 tlen = [5, 10, 50, 100, 500, 1000, 5000, 10000, 15000, 20000, 25000, 30000]
-tlen += [35000, 45000, 55000, 65000, 75000, 85000, 100000]
+tlen += [35000, 40000, 50000, 60000, 70000, 80000, 100000]
+output = open('results_1.txt', 'w')
 for length in tlen:
     lst = generateRandomArr(length)
     start_time = time.time()
-    qsort(lst.copy())
-    qTime = time.time() - start_time
+    for j in range(0, 10):
+        qsort(lst.copy())
+    qTime = (time.time() - start_time) / 10
     start_time = time.time()
-    shellsort(lst.copy())
-    sTime = time.time() - start_time
+    for j in range(0, 10):
+        shellsort(lst.copy())
+    sTime = (time.time() - start_time) / 10
     msg = 'Len = {}, qsort: {}; shellsort: {}\n'
     print(msg.format(length, qTime, sTime))
-'''
+    output.write(str(length) + ' ' + str(qTime) + ' ' + str(sTime) + '\n')
+output.close()
 
 
 def oneStepBubble(arr, direction):
@@ -82,15 +89,20 @@ for i in range(3000):
     data.insert(0, lst2.copy())
 
 # с шагом в 0,05 по sort ratio
+# повтор 50 раз для большей точности
+output = open('results_2.txt', 'w')
 for i in range(0, len(data), 150):
-    data_curr1 = data[i].copy()
-    data_curr2 = data[i].copy()
     start_time = time.time()
-    qsort(data_curr1)
-    qTime = time.time() - start_time
+    for j in range(0, 50):
+        qsort(data[i].copy())
+    qTime = (time.time() - start_time) / 50
     start_time = time.time()
-    shellsort(data_curr2)
-    sTime = time.time() - start_time
+    for j in range(0, 50):
+        shellsort(data[i].copy())
+    sTime = (time.time() - start_time) / 50
     ratio = (i - 3000) / 3000
     msg = 'Ratio = {}, qsort: {}; shellsort: {}\n'
     print(msg.format(ratio, qTime, sTime))
+    output.write(str(ratio) + ' ' + str(qTime) + ' ' + str(sTime) + '\n')
+output.close()
+
