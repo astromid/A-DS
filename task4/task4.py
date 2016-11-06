@@ -97,7 +97,7 @@ def HilbertRec(n, pic):
     return delta_time
 
 output = open('results.txt', 'w')
-for n in range(0, 10):
+for n in range(0, 14):
     time_iter = 0
     time_rec = 0
     for i in range(0, 100):
