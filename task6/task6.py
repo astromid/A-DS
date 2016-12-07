@@ -39,7 +39,7 @@ textfile.close()
 # flat words list
 words = [word for line in words for word in line]
 # number of unic words (from previous task)
-N = 48123
+N = 30500
 hashtablePJW = [None]*N
 hashtableDJB = [None]*N
 usedSpacePJW = 0
@@ -96,7 +96,7 @@ for word in words:
         usedSpaceDJB += 1
         hashtableDJB[keyDJB] = [[word, 1]]
 # output in file
-output = open('results.csv', 'w')
+output = open('results2.csv', 'w')
 output.write('a, collPJW, collDJB\n')
 for i in range(0, M):
     strPJW = str(collisionPJW[i])
